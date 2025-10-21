@@ -12,9 +12,10 @@ body {
     height: 100vh;
     color: white;
     align-items: center;
-    background: radial-gradient(#9afff7, rgb(43, 73, 83));
+    background: radial-gradient(#272727, rgb(12, 12, 12));
     margin-left: 200px;
     margin-right: 200px;
+    padding: 30px;
 }
 
 header {
@@ -28,14 +29,12 @@ main {
     flex-direction: column;
     margin-top: 30px;
     width: 100%;
-    height: 100%;
 }
 
 footer {
     margin-top: auto;
     background-color: rgb(63, 88, 88);
     width: 100%;
-    height: 200px;
 }
 
 #contenedor {
@@ -44,10 +43,9 @@ footer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     height: 100%;
-    padding: 30px;
-    overflow-y: auto;
     justify-items: center;
     text-align: center;
+    margin-top: 30px;
 }
 
 .carta_pokemon {
@@ -67,4 +65,14 @@ footer {
 
 .imagen_pokemon_default {
     width: 200px;
+}
+
+.etiqueta_tipo_pokemon {
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(64, 15, 83);
+    border: 1px solid rgb(255, 12, 255);
 }

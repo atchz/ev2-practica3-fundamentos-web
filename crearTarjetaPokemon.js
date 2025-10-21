@@ -1,7 +1,11 @@
 const contenedor = document.getElementById("contenedor");
 
-export async function crearTarjetaPokemon() {
-    for (let index = 1; index < 20; index++) {
+export async function crearTarjetaPokemon(contadorPokemon, contador) {
+    for (
+        let index = contadorPokemon;
+        index < contadorPokemon + contador;
+        index++
+    ) {
         const response = await fetch(
             `https://pokeapi.co/api/v2/pokemon/${index}`
         );
@@ -18,6 +22,13 @@ export async function crearTarjetaPokemon() {
 
         carta_pokemon.appendChild(imagen_default);
         carta_pokemon.appendChild(carta_nombre_pokemon);
+
+        data.types.forEach((pokemon) => {
+            const etiqueta_tipo_pokemon = document.createElement("h5");
+            etiqueta_tipo_pokemon.className = "etiqueta_tipo_pokemon";
+            etiqueta_tipo_pokemon.textContent = pokemon.type.name;
+            carta_pokemon.appendChild(etiqueta_tipo_pokemon);
+        });
 
         contenedor.appendChild(carta_pokemon);
     }
