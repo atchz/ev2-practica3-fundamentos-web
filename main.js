@@ -1,6 +1,6 @@
 import { crearTarjetaPokemon } from "./crearTarjetaPokemon.js";
 
-const boton = document.getElementById("cargar");
+const boton = document.getElementById("btn-cargar");
 let contadorPokemon = 1;
 
 crearTarjetaPokemon(contadorPokemon, 20).then(() => {

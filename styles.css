@@ -15,18 +15,27 @@ body {
     background: radial-gradient(#272727, rgb(12, 12, 12));
     margin-left: 200px;
     margin-right: 200px;
-    padding: 30px;
+    padding-right: 200px;
+    padding-left: 200px;
 }
 
 header {
     display: inline-block;
     width: 100%;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 30px;
     width: 100%;
 }
@@ -75,4 +84,32 @@ footer {
     border-radius: 12px;
     background-color: rgb(64, 15, 83);
     border: 1px solid rgb(255, 12, 255);
+}
+
+.filtro {
+    width: 100%;
+    background: linear-gradient(#242424, black);
+    height: 60px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.151);
+}
+
+#btn-cargar {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 12px;
+    background-color: #242424;
+    border: 1px solid rgba(255, 255, 255, 0.151);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btn-cargar:hover {
+    filter: brightness(1.2);
 }
