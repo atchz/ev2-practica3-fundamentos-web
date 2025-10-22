@@ -6,10 +6,10 @@
         <link rel="stylesheet" href="styles.css" />
         <link
             rel="shortcut icon"
-            href="Poké_Ball_icon.svg.png"
+            href="./imgs/Poké_Ball_icon.svg.png"
             type="image/x-icon"
         />
-        <title>PokeWiki</title>
+        <title>PokéWiki</title>
     </head>
     <body>
         <header>
@@ -74,11 +74,17 @@
                         />
                     </g>
                 </svg>
-                <h1>PokeWiki</h1>
+                <a class="titulo" href="#">PokéWiki</a>
             </div>
         </header>
-        <main>
-            <div class="filtro">Filtro</div>
+        <main id="main">
+            <div class="filtro">
+                <h3>Buscar en PokéWiki:</h3>
+                <form>
+                    <input type="text" id="buscador" placeholder="Pikachu" />
+                    <button id="btn-buscar" type="submit">Buscar</button>
+                </form>
+            </div>
             <div id="contenedor"></div>
             <button id="btn-cargar">Cargar más</button>
         </main>
