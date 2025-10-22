@@ -33,11 +33,8 @@ async function crearCartaPokemon(datosPokemon) {
 
     contenedor.appendChild(cartaPokemon);
 }
-export async function crearTarjetasPokemon(
-    contadorPokemon,
-    contador,
-    nombrePokemon
-) {
+
+async function crearTarjetasPokemon(contadorPokemon, contador, nombrePokemon) {
     if (nombrePokemon) {
         const response = await fetch(
             `https://pokeapi.co/api/v2/pokemon/${nombrePokemon}`
@@ -54,7 +51,7 @@ export async function crearTarjetasPokemon(
     }
 }
 
-export async function mostrarDetallePokemon(datosPokemon, cartaPokemon) {
+async function mostrarDetallePokemon(datosPokemon, cartaPokemon) {
     contenedor.innerHTML = "";
     contenedor.style.display = "block";
 
